@@ -9,15 +9,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Rutas a las vistas
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'templates', 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'views', 'index.html'));
 });
 
 app.get('/servicios', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'templates', 'services.html'));
+  res.sendFile(path.join(__dirname, 'public', 'views', 'services.html'));
 });
 
 app.get('/sobre-nosotros', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'templates', 'aboutus.html'));
+  res.sendFile(path.join(__dirname, 'public', 'views', 'aboutus.html'));
+});
+
+app.get('/contacto', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'views', 'contact.html'));
 });
 
 //Rutas .............
