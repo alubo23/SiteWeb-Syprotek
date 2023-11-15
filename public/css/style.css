@@ -351,7 +351,7 @@
 .box-4 h3 {
     text-align: center;
     font-size: 64px;
-    font-weight: 600;
+    font-weight: 700;
     color: #071d49;
 }
 
@@ -904,7 +904,7 @@
 }
 
 .form-img-2 img {
-    max-width: 550px;
+    width: 100%;
     border-radius: 1rem;
 }
 
@@ -922,6 +922,8 @@
     padding: 1rem 2rem;
 }
 
+
+/* Beneficios -----------------------------------------------------------*/
 .benefits {
     padding:1rem 3rem 5rem;
 }
@@ -1086,7 +1088,7 @@
      
     .sub-box-1
      {
-        flex-wrap: wrap-reverse;
+        flex-wrap: wrap;
     }
 
     .box-1 h3 {
@@ -1094,6 +1096,30 @@
     }
 
     .sub-box-1 p {
+        font-size: 16px;
+    }
+
+    .box-2 h3 {
+        font-size: 32px;
+    }
+
+    .sub-box-2 p {
+        font-size: 16px;
+    }
+
+    .sub-box-2 {
+        flex-direction: column;
+    }
+
+    .sub-box-3 {
+        flex-wrap: wrap-reverse;
+    }
+
+    .box-3 h3 {
+        font-size: 32px;
+    }
+
+    .sub-box-3 p {
         font-size: 16px;
     }
 
@@ -1105,6 +1131,16 @@
         margin: 1rem 20px;
     }
     
+    .services-offer-box {
+        flex-wrap: wrap;
+        padding: 0 3rem;
+    }
+
+    .custom-card {
+        margin: 2rem;
+    }
+
+
     .industries-box {
         flex-direction: column;
     }
@@ -1126,6 +1162,10 @@
         padding: 6rem 3rem;
     }
 
+    .benefits-box {
+        flex-wrap: wrap;
+    }
+
     .footer .group-1{
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
@@ -1134,7 +1174,101 @@
     }
 }
 
+@media (max-width: 991px) {
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 84px;
+    }
+
+    .hero-text h3 {
+        font-size: 16px;
+    }
+
+    .hero-text-2 h1{
+        font-size: 72px;
+    }
+
+    .hero-text-3 h1 {
+        font-size: 72px;
+    }
+
+    .group-box-4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-offer h2 {
+        font-size: 48px;
+    }
+
+    .industries-sub-box img {
+        width: 80px;
+    }
+
+    .industries-sub-box::after {
+        width: 90%;
+    }
+
+    .industries-sub-box h3 {
+        font-size: 32px;
+    }
+
+    .industries-txt p {
+        font-size: 16px;
+    }
+
+    .integrator {
+        padding: 0 5rem;
+    }
+
+    .integrator-txt h3 {
+        font-size: 32px;
+    }
+
+    .integrator-txt p {
+        font-size: 16px;
+    }
+
+    .integrator-img {
+        padding: 0 2rem;
+    }
+
+    .clients h2 {
+        font-size: 56px;
+    }
+
+    .form-elements {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-box {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-form2 {
+        padding: 0 2rem 1rem;
+    }
+
+    .form-elements input,
+    .form-elements textarea {
+        width: 90%;
+        min-width: 250px
+    }
+
+    .form-img-2 img {
+        width: 80%;
+    }
+}
+
 @media (max-width: 800px) {
+
     .nav-container {
       padding: 0 1.5rem;
     }
@@ -1164,19 +1298,20 @@
       .menu-item {
         margin: 1rem 0;
       }
+
+      .contact  {
+        padding: 6rem 0;
+    }
 }
 
 @media (max-width: 768px) {
-    .hero-text {
-        width: 100%;
-    }
 
     .hero-text h1 {
-        font-size: 84px;
+        font-size: 56px;
     }
 
-    .hero-text h3 {
-        font-size: 16px;
+    .hero-text-3 h1 {
+        font-size: 64px;
     }
 
     .industries-box {
@@ -1189,14 +1324,6 @@
         padding: 3rem 0;
     }
 
-    .industries-sub-box img {
-        width: 80px;
-    }
-
-    .industries-sub-box h3 {
-        font-size: 32px;
-    }
-
     .industries-txt p {
         padding: .5rem 2rem;
     }
@@ -1206,25 +1333,244 @@
     }
 
     .clients h2 {
-        font-size: 56px;
+        font-size: 42px;
     }
 
     .text__img__box h3 {
         font-size: 32px;
+        padding: 0 1rem;
+    }
+
+    .text__img__box p {
+        font-size: 16px;
+        padding: 0 .5rem;
+    }
+
+    .text__img__box a {
+        font-size: 16px;
+    }
+
+    .box-1 img {
+        width: 50vh;
+    }
+
+    .box-3 img {
+        width: 50vh;
     }
 
 }
 
+@media (max-width: 678px) {
+
+    .box-2 {
+        padding: 5rem 3rem;
+    }
+
+    .benefits h2 {
+        font-size: 48px;
+        padding-left: 1rem;
+    }
+
+    .benefits-content {
+        padding: 2rem 1rem;
+    }
+
+    .benefits-content img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 @media (max-width: 548px) {
-    .box-1 img {
-        width: 50vh;
+
+    .hero-text-3 h1 {
+        font-size: 48px;
+    }
+
+    .hero-text-3 h1::after {
+        width: 50%;
+    }
+
+    .box-2 {
+        padding: 5rem 2rem;
+    }
+
+    .box-4 {
+        padding: 3rem 2rem;
+    }
+
+    .card {
+        width: 300px;
+        height: 350px;
     }
 
     .industries h2 {
         font-size: 56px;
     }
+    
+    .industries-box {
+        padding: 0 3rem;
+    }
 
-    .clients h2 {
+    .industries-sub-box {
+        padding: 2rem .5rem;
+        text-align: left;
+    }
+
+    .industries-sub-box h3 {
+        font-size: 24px;
+        padding-left: 1.5rem;
+    }
+
+    .industries-sub-box img {
+        width: 50px;
+    }
+
+    .industries-txt {
+        padding: 3rem 1rem;
+    }
+
+    .integrator {
+        padding: 0 2rem;
+    }
+
+    .integrator-img img {
+        width: 40vh;
+    }
+
+    .custom-content h3 {
+        font-size: 22px;
+        line-height: 1.25;
+    }
+
+    .custom-content p {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+
+    .contact p {
+        font-size: 16px;
+    }
+
+    .container-header {
+        width: 50vh;
+    }
+
+    .contact label {
+        font-size: 16px;
+    }
+
+    .form-elements input,
+    .form-elements textarea {
+        width: 100%;
+    }
+
+    .form-img {
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 510px) {
+    .clients {
+        display: none;
+    }
+
+    .box-1 img {
+        width: 40vh;
+    }
+
+    .box-3 img {
+        width: 40vh;
+    }
+
+    .box-4 h3 {
+        font-size: 48px;
+    }
+
+    .sub-box-4 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .services-offer h2 {
+        font-size: 36px;
+        padding-bottom: 0;
+    }
+
+    .services-offer-box {
+        padding: 3rem 1rem;
+    }
+
+    .custom-image {
+        height: auto;
+    }
+
+    .benefits {
+        padding: 1rem 1rem 5rem;
+    }
+
+    .benefits-content p {
+        font-size: 16px;
+        line-height: 1.3;
+        padding: 0 1rem;
+    }
+
+    .form-img-2 img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 410px) {
+
+    .hero-text-2 h1{
+        font-size: 56px;
+    }
+
+    .hero-text-2 h1::after {
+        width: 40%;
+    }
+
+    .hero-text-3 h1 {
         font-size: 42px;
+    }
+
+    .hero-text-3 h1::after {
+        width: 45%;
+    }
+
+    .box-2 {
+        padding: 5rem 1rem;
+    }
+
+    .box-4 {
+        padding: 5rem 1rem;
+    }
+
+    .box-4 h3 {
+        font-size: 36px;
+    }
+
+    .benefits {
+        padding: 1rem 0 5rem;
+    }
+
+}
+
+@media (max-width:380px) {
+    
+    .box-1 {
+        padding: 5rem 2rem;
+    }
+
+    .box-3 {
+        padding: 4rem 2rem;
+    }
+
+    .box-3-paragraph {
+        padding: 0 0 1.5rem;
     }
 }
