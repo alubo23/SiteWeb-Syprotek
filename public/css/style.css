@@ -458,7 +458,7 @@
 }
 
 .card .back .link{
-    border-top: solid 1px var(--blanco);
+    border-top: solid 1px #fff;
     height: 50px;
     line-height: 50px;
 }
