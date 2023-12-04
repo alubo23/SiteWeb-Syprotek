@@ -75,3 +75,11 @@ $(document).ready(function(){
         }]
     });
 });
+
+function formContact(numero) {
+    if (numero === 1) {
+      window.location.href = "/contacto";
+    } else if (numero === 2) {
+      window.location.href = "/en/contact";
+    }
+  }
