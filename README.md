@@ -44,7 +44,7 @@ Este sitio web representa a "Soluciones Y Proyectos Tecnológicos", una empresa 
 
 
 ## Instalación
-- Clona este repositorio: git clone https://github.com/tuusuario/automatizacion-industrial.git
+- Clona este repositorio: git clone https://github.com/alubo23/SiteWeb-Syprotek.git
 - Instala las dependencias: npm install
 
 ## Uso
