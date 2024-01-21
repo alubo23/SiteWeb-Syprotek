@@ -4,10 +4,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Configurar el directorio de archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
-
-// Rutas a las vistas
 
 //Site Web Español
 app.get('/', (req, res) => {
@@ -26,8 +23,7 @@ app.get('/contacto', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'views', 'contact.html'));
 });
 
-// Site Web English
-
+// Site Web Inglés
 app.get('/en/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'views', 'en-index.html'));
 });
@@ -43,7 +39,6 @@ app.get('/en/about', (req, res) => {
 app.get('/en/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'views', 'en-contact.html'));
 });
-
 
 
 
